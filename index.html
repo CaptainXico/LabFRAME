@@ -14,6 +14,16 @@
   <!-- Sky (used JPG, EXR won't work) -->
   <a-sky src="./Carina.jpg"></a-sky>
 
+   <!-- Floor -->
+      <a-plane 
+        position="0 0 -10" 
+        rotation="-90 0 0" 
+        width="100" 
+        height="100" 
+        color="#222" 
+        material="opacity: 0.9; roughness: 1"
+      ></a-plane>
+
       <!-- Camera rig with controllers as children -->
       <a-entity id="camera-rig" player-jump>
         <a-camera id="camera" position="0 1.6 0" look-controls="pointerLockEnabled: true">
